@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>StratupItp</display-name>
+  <welcome-file-list>
+    <welcome-file>Jsp/Index.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <servlet-name>User</servlet-name>
+    <servlet-class>com.project.controller.UserServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>User</servlet-name>
+    <url-pattern>/getUsers</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>getData</servlet-name>
+    <servlet-class>com.project.controller.GetUserInfo</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>getData</servlet-name>
+    <url-pattern>/GetAllData</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>deleteUser</servlet-name>
+    <servlet-class>com.project.controller.DeleteUserServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>deleteUser</servlet-name>
+    <url-pattern>/Deleteusers</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>pdf</servlet-name>
+    <servlet-class>com.project.controller.PdfHandler</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>pdf</servlet-name>
+    <url-pattern>/pdfDowload</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+    <servlet-name>vehicledata</servlet-name>
+    <servlet-class>com.project.controller.getvehicle</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>vehicledata</servlet-name>
+    <url-pattern>/getvehicle</url-pattern>
+  </servlet-mapping>
+  
+  
+</web-app>
